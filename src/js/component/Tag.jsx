@@ -1,13 +1,14 @@
 import React from "react";
+import Home from "./home";
 
-const Tag = (props) =>{
-    return(
-     <li className="list-group-item">
-           <div className="d-flex justify-content-between">
+const Tag = (props) => {
+    return (
+
+        <div className="d-flex justify-content-between">
             <p>{props.text}</p>
-            <button className="border-0 bg-transparent">❌</button>
-           </div>
-     </li>
+            <button className="border-0 bg-transparent" onClick={() => props.deleteTag(props.id)}>❌</button>
+        </div>
+
     );
 
 };
