@@ -1,11 +1,10 @@
 import React from "react";
-import Home from "./home";
 
-const Tag = (props) => {
+const Task = (props) => {
     return (
 
         <div className="d-flex justify-content-between">
-            <p>{props.text}</p>
+            <p>{props.task}</p>
             <button className="border-0 bg-transparent" onClick={() => props.deleteTag(props.id)}>❌</button>
         </div>
 
@@ -13,4 +12,4 @@ const Tag = (props) => {
 
 };
 
-export default Tag
+export default Task
