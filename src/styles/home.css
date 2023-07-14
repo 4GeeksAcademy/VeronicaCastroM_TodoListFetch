@@ -1,9 +1,10 @@
-h1{
-    color:rgb(255, 200, 250);
+h1 {
+    text-align: center;
+    color: rgb(255, 200, 250);
     font-size: 100px;
     font-weight: lighter;
 }
 
-.form-control:focus{
+.form-control:focus {
     border-color: white;
 }

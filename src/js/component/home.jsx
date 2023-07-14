@@ -12,12 +12,12 @@ const Home = () => {
 	const [InputText, setInputText] = useState("");
 
 
-	const handleKeyDown = (e) =>{
+	const handleKeyDown = (e) => {
 		if (e.key === "Enter") {
 			if (InputText.trim() !== '') {
-			  setTasks([...tasks, InputText]);
+				setTasks([...tasks, InputText]);
 				setInputText('');
-				
+
 			}
 		}
 	}
@@ -39,7 +39,7 @@ const Home = () => {
 				{/* Render every input that gets inserted */}
 				{tasks.map((task, index) => {
 					return <li key={index} className="ul-list list-group-item">
-                     <Task task={task} deleteTag= {deleteTag} id={index}/>
+						<Task task={task} deleteTag={deleteTag} id={index} />
 					</li>
 				})}
 				<li className="list-group-item Input-start">{tasks.length} Items left</li>
